@@ -10,4 +10,5 @@
 - 워크플로 지침은 `.claude/skills/reverse-engineer-anything/` 스킬에 있다.
 - 번들된 페이지·앱·바이너리처럼 소스가 없는 대상을 분석할 때 REA를 쓴다. 일반 소스 분석에는 쓰지 않는다.
 - JS 정적 분석은 별도 엔진 없이 동작한다. 네이티브 분석(Ghidra/Hopper/IDA)은 해당 엔진 설치가 필요하다.
+- 클라우드 세션용 엔진 설치 스크립트: `.claude/hooks/install-re-engines.sh` (Ghidra 12.1.4, Hopper 6.4.2 데모, 로그 `/tmp/re-engines-install.log`). `github.com`, `www.hopperapp.com` 네트워크 허용 필요.
 - 버전 업데이트 시 `.mcp.json`의 버전과 스킬 폴더(npm 패키지의 `skills/`)를 함께 맞춘다.
