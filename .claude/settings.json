@@ -5,5 +5,17 @@
       "Bash(npx -y rea-agents@6.5.0 doctor:*)",
       "Bash(npx -y rea-agents@6.5.0 analyze-javascript-application:*)"
     ]
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$CLAUDE_PROJECT_DIR\"/.claude/hooks/install-re-engines.sh"
+          }
+        ]
+      }
+    ]
   }
 }
